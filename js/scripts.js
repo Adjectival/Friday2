@@ -3,7 +3,6 @@ $(document).ready(function() {
     event.preventDefault();
 
     var howRemote = 0;
-    var howRelaxed = 0;
     var howLuxury = 0;
     var howNatural = 0;
 
