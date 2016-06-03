@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     if (remoteLove >= 3) {
       console.log("high, so Q")
-    } else if (remoteLove >= 1) {
+    } else if (remoteLove >= 0) {
       console.log("med, so K")
     } else {
       console.log("low, better go to Monaco")
