@@ -4,19 +4,19 @@
   font-family: monospace;
 }
 
-.monaco {
+.gotoMonaco {
   display: none;
   color: red;
   background-color: pink;
 }
 
-.kauai {
+.gotoKauai {
   display: none;
   color: green;
   background-color: lime;
 }
 
-.qaqortoq {
+.gotoQaqortoq {
   display: none;
   color: blue;
   background-color: lightblue;

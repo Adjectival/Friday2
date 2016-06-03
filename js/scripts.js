@@ -5,10 +5,6 @@ $(document).ready(function() {
   $("form#whereto").submit(function(event) {
     event.preventDefault();
 
-    // $('.gotoQaqortoq').hide();
-    // $('.gotoKauai').hide();
-    // $('.gotoMonaco').hide();
-
     remoteLove += parseInt($("#sleep").val())
     remoteLove += parseInt($("#selftime").val())
     remoteLove += parseInt($("#yourlife").val())
@@ -16,21 +12,12 @@ $(document).ready(function() {
     remoteLove += parseInt($("#bed").val())
 
     if (remoteLove >= 4) {
-      $('.gotoQaqortoq').show();
-      $('.gotoKauai').hide();
-      $('.gotoMonaco').hide();
+      $('.gotoQaqortoq').toggle();
     } else if (remoteLove >= -1) {
-      $('.gotoKauai').show();
-      $('.gotoQaqortoq').hide();
-      $('.gotoMonaco').hide();
+      $('.gotoKauai').toggle();
     } else {
-      $('.gotoMonaco').show();
-      $('.gotoKauai').hide();
-      $('.gotoQaqortoq').hide();
+      $('.gotoMonaco').toggle();
     }
-
-
-
-
+    
   });
 });
