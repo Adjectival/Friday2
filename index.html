@@ -1,29 +1,5 @@
 <!-- Don't forget your Git commits or README.
 
-a user can answer questions about themselves and be given a vacation destination based on their answers.
-
-doesn't impact survey
-signified by 0
-howNatural Kauai, Hawaii
-signified by k
-  http://www.gohawaii.com/en/kauai/
-howLuxury Monaco, Europe
-signified by m
-  http://www.visitmonaco.com/
-howRemote Qaqortoq, Greenland
-signified by q
-  http://www.greenland.com/
-
-Offer a minimum of 3 vacation destination suggestions. Feel free to use very simple logic, or even ignore the user's responses for some questions.
-
-Site uses branching to return destination.
-
-jQuery is used to show and hide destination after questions are answered and submitted.
-
-Form gathers input from the user.
-
-Variable names are descriptive of what they represent.
-
 Web page is styled using Bootstrap and custom CSS.
 
 Ask for their name and address them directly in all of the responses to them: "Enrique, you ought to set sail for South Africa!".
@@ -45,9 +21,10 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
   </head>
   <body>
     <div class="container">
-      <h1>You ideal vacation destination is out there...</h1>
-      <h2>Tell us about yourself!</h2>
+      <h2>Your ideal vacation destination is out there...</h2>
+      <h1>Tell us about yourself!</h1>
       <h3>How far do you want to get away?</h3>
+      <img>
 
       <div class="survey">
         <form id="whereto">
@@ -82,7 +59,7 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
             <label for="yourlife">What will you talk about with your grandchildren?</label>
             <select class="form-control" id="yourlife">
                <option value="1">all the amazing places you've seen in your life</option>
-               <option value="0">all the interesting people you've met in your life</option>
+               <option value="-1">all the interesting people you've met in your life</option>
                <option value="2">all the funny things you've realized about life and happiness</option>
             </select>
           </div>
@@ -101,9 +78,22 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
         </form>
       </div>
 
-      <div class="output">
-        <!-- hide result until survey submit -->
+      <div class="gotoQaqortoq">
+        <h2>You really ought to visit
+          <a href="http://www.greenland.com/en/destinations/south-greenland/qaqortoq/">Qaqortoq</a> for a great vacation getaway!</h2>
+        <img src="img/qaqortoq.jpg" alt="Arctic hamlet of Qaqortoq, North of almost everyone" />
       </div>
+
+      <div class="gotoKauai">
+        <h2>You really ought to visit <a href="http://www.gohawaii.com/en/kauai/">Kauai</a> for a great vacation getaway!</h2>
+        <img src="img/kauai.jpg" alt="Untarnished Kauai, jewel of Hawai'i" />
+      </div>
+
+      <div class="gotoMonaco">
+        <h2>You really ought to visit <a href="http://www.visitmonaco.com/">Monaco</a> for a great vacation getaway!</h2>
+        <img src="img/monaco.jpg" alt="World-famous Monaco, the high rollers paradise" />
+      </div>
+
     </div>
   </body>
 </html>

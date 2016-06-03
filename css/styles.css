@@ -1,7 +1,23 @@
+
 .survey {
-  color: green;
+  color: darkgreen;
+  font-family: monospace;
 }
 
-.output {
+.monaco {
   display: none;
+  color: red;
+  background-color: pink;
+}
+
+.kauai {
+  display: none;
+  color: green;
+  background-color: lime;
+}
+
+.qaqortoq {
+  display: none;
+  color: blue;
+  background-color: lightblue;
 }
