@@ -45,8 +45,9 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
   </head>
   <body>
     <div class="container">
-      <h1>Your ideal vacation destination is out there...</h1>
-      <h2>Tell us about yourself</h2>
+      <h1>You ideal vacation destination is out there...</h1>
+      <h2>Tell us about yourself!</h2>
+      <h3>How far do you want to get away?</h3>
 
       <div class="survey">
         <form id="whereto">
@@ -55,48 +56,48 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
             <label for="bed">When you travel, where do you prefer to sleep?</label>
             <select class="form-control" id="bed">
                <option value="0">in a hostel, or maybe a bed and breakfast</option>
-               <option value="m">in a hotel near major attractions and transportation</option>
-               <option value="0">anywhere safe and snug</option>
+               <option value="-1">in a hotel near major attractions and transportation</option>
+               <option value="1">anywhere safe and snug</option>
             </select>
           </div>
           <div class="form-group">
             <label for="sleep">When do you sleep best?</label>
             <select class="form-control" id="sleep">
-               <option value="m">with some background sound, maybe the hum of a city</option>
-               <option value="k">with white noise, like surf or rain</option>
-               <option value="q">with earplugs in, if it's not quiet enough</option>
+               <option value="-1">with some background sound, maybe the hum of a city</option>
+               <option value="0">with white noise, like surf or rain</option>
+               <option value="1">with earplugs in, if it's not quiet enough</option>
             </select>
           </div>
           <div class="form-group">
             <label for="selftime">Tomorrow you have a day to yourself. How might you spend it?</label>
             <select class="form-control" id="selftime">
-               <option value="m">hanging out at your favorite cafe, people watching</option>
+               <option value="-2">hanging out at your favorite cafe, people watching</option>
                <option value="0">exploring your neighborhood, maybe finding new places and meeting new people</option>
-               <option value="k">experiencing nature</option>
-               <option value="q">pushing your limits</option>
-               <option value="0">surfing online, watching movies, etc</option>
+               <option value="1">experiencing nature</option>
+               <option value="2">pushing your limits</option>
+               <option value="-1">surfing online, watching movies, etc</option>
             </select>
           </div>
           <div class="form-group">
             <label for="yourlife">What will you talk about with your grandchildren?</label>
             <select class="form-control" id="yourlife">
-               <option value="k">all the amazing places you've seen in your life</option>
-               <option value="m">all the interesting people you've met in your life</option>
-               <option value="q">all the funny things you've realized about life and happiness</option>
+               <option value="1">all the amazing places you've seen in your life</option>
+               <option value="0">all the interesting people you've met in your life</option>
+               <option value="2">all the funny things you've realized about life and happiness</option>
             </select>
           </div>
           <div class="form-group">
             <label for="best">Which of these adventures sounds most fun to you?</label>
             <select class="form-control" id="best">
-               <option value="k">walking a jungle path to find a volcano</option>
-               <option value="m">playing games in a casino</option>
-               <option value="q">eating unusual, local cuisine</option>
-               <option value="q">whale watching from a ship</option>
-               <option value="k">sharing stories around a campfire</option>
-               <option value="m">getting lost in a strange new city</option>
+               <option value="1">walking a jungle path to find a volcano</option>
+               <option value="-2">playing games in a casino</option>
+               <option value="0">eating unusual, local cuisine</option>
+               <option value="1">whale watching from a ship</option>
+               <option value="0">sharing stories around a campfire</option>
+               <option value="-1">getting lost in a strange new city</option>
             </select>
           </div>
-
+          <button type="submit" class="btn">Where To?</button>
         </form>
       </div>
 
