@@ -12,12 +12,15 @@ $(document).ready(function() {
     remoteLove += parseInt($("#bed").val())
 
     if (remoteLove >= 4) {
-      $('.gotoQaqortoq').toggle();
+      $('.gotoQaqortoq').toggle()
+      $('.survey').toggle();
     } else if (remoteLove >= -1) {
       $('.gotoKauai').toggle();
+      $('.survey').toggle();
     } else {
       $('.gotoMonaco').toggle();
+      $('.survey').toggle();
     }
-    
+
   });
 });
