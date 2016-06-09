@@ -1,13 +1,3 @@
-<!-- Don't forget your Git commits or README.
-
-Web page is styled using Bootstrap and custom CSS.
-
-Ask for their name and address them directly in all of the responses to them: "Enrique, you ought to set sail for South Africa!".
-
-multiple choice (like a, b, or c); determine which destination is right for a user by identifying the letter that was most frequently selected; for example, "you chose mostly a's, you should book a flight to the Bahamas!".
-
-Use fade in/out or slide in/out jQuery Effects throughout your project. -->
-
 
 <!DOCTYPE html>
 <html>
@@ -21,15 +11,14 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
   </head>
   <body>
     <div class="container">
-
       <div class="survey">
-        <h2>Your ideal vacation destination is out there...</h2>
-        <h1>Tell us about yourself!</h1>
-        <h3>How far do you want to get away?</h3>
+        <h3>Your ideal vacation destination is out there...</h3>
+        <h2>Tell us about yourself!</h2>
+        <h1>How far do you want to get away?</h1>
         <img>
         <form id="whereto">
           <div class="form-group">
-            <label for="bed">When you travel, where do you prefer to sleep?</label>
+            <label for="bed"><span class="glyphicon glyphicon-bed"></span> When you travel, where do you <em>prefer to sleep</em>?</label>
             <select class="form-control" id="bed">
                <option value="0">in a hostel, or maybe a bed and breakfast</option>
                <option value="-1">in a hotel near major attractions and transportation</option>
@@ -37,7 +26,7 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
             </select>
           </div>
           <div class="form-group">
-            <label for="sleep">When do you sleep best?</label>
+            <label for="sleep"><span class="glyphicon glyphicon-volume-down"></span> When do you <em>sleep best</em>?</label>
             <select class="form-control" id="sleep">
                <option value="-1">with some background sound, maybe the hum of a city</option>
                <option value="0">with white noise, like surf or rain</option>
@@ -45,7 +34,7 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
             </select>
           </div>
           <div class="form-group">
-            <label for="selftime">Tomorrow you have a day to yourself. How might you spend it?</label>
+            <label for="selftime"><span class="glyphicon glyphicon-sunglasses"></span> Tomorrow you have <em>a day to yourself</em>. How might you spend it?</label>
             <select class="form-control" id="selftime">
                <option value="-2">hanging out at your favorite cafe, people watching</option>
                <option value="0">exploring your neighborhood, maybe finding new places and meeting new people</option>
@@ -55,7 +44,7 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
             </select>
           </div>
           <div class="form-group">
-            <label for="yourlife">What will you talk about with your grandchildren?</label>
+            <label for="yourlife"><span class="glyphicon glyphicon-grain"></span> What will you talk about with your <em>grandchildren</em>?</label>
             <select class="form-control" id="yourlife">
                <option value="1">all the amazing places you've seen in your life</option>
                <option value="-1">all the interesting people you've met in your life</option>
@@ -63,7 +52,7 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
             </select>
           </div>
           <div class="form-group">
-            <label for="best">Which of these adventures sounds most fun to you?</label>
+            <label for="best"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span> Which of these adventures sounds <em>most fun</em> to you?</label>
             <select class="form-control" id="best">
                <option value="1">walking a jungle path to find a volcano</option>
                <option value="-2">playing games in a casino</option>
@@ -73,24 +62,24 @@ Use fade in/out or slide in/out jQuery Effects throughout your project. -->
                <option value="-1">getting lost in a strange new city</option>
             </select>
           </div>
-          <button type="submit" class="btn">Where To?</button>
+          <button type="submit" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-plane"></span> Where To?</button>
         </form>
       </div>
 
       <div class="gotoQaqortoq">
         <h2>You really ought to visit
           <a href="http://www.greenland.com/en/destinations/south-greenland/qaqortoq/">Qaqortoq</a> for a great vacation getaway!</h2>
-        <img src="img/qaqortoq.jpg" alt="Arctic hamlet of Qaqortoq, North of almost everyone" />
+        <img class="img-responsive" src="img/qaqortoq.jpg" alt="Arctic hamlet of Qaqortoq, North of almost everyone" />
       </div>
 
       <div class="gotoKauai">
         <h2>You really ought to visit <a href="http://www.gohawaii.com/en/kauai/">Kauai</a> for a great vacation getaway!</h2>
-        <img src="img/kauai.jpg" alt="Untarnished Kauai, jewel of Hawai'i" />
+        <img class="img-responsive" src="img/kauai.jpg" alt="Untarnished Kauai, jewel of Hawai'i" />
       </div>
 
       <div class="gotoMonaco">
         <h2>You really ought to visit <a href="http://www.visitmonaco.com/">Monaco</a> for a great vacation getaway!</h2>
-        <img src="img/monaco.jpg" alt="World-famous Monaco, the high rollers paradise" />
+        <img  class="img-responsive" src="img/monaco.jpg" alt="World-famous Monaco, the high rollers paradise" />
       </div>
 
     </div>

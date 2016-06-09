@@ -11,10 +11,10 @@ $(document).ready(function() {
     remoteLove += parseInt($("#best").val())
     remoteLove += parseInt($("#bed").val())
 
-    if (remoteLove >= 4) {
+    if (remoteLove >= 3) {
       $('.gotoQaqortoq').toggle()
       $('.survey').toggle();
-    } else if (remoteLove >= -1) {
+    } else if (remoteLove >= 0) {
       $('.gotoKauai').toggle();
       $('.survey').toggle();
     } else {
